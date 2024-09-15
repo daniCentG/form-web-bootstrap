@@ -1,6 +1,6 @@
 **Formulario de Registro**
 
-##AQUÍ una demo rápida del proyecto: https://danicentg.github.io/form-web-bootstrap/
+**AQUÍ una demo rápida del proyecto:** https://danicentg.github.io/form-web-bootstrap/
 
 Este proyecto consiste en un formulario de registro moderno con íconos interactivos y animaciones, utilizando tecnologías web actuales. El objetivo es ofrecer una interfaz visualmente atractiva y responsiva-dinámica para la captura de datos de usuarios.
 Tecnologías Utilizadas
