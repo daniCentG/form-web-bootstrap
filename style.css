@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(175deg, #00597c 0%, #333333 100%);
+}
+
+.title{
+    margin-top: -50px;
+    padding: 15px;
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 415px;
+    padding: 80px 35px;
+}
+
+.form-control {
+    background-color: transparent !important;
+    border: 2px solid #56ccf2;
+    color: #ffffff !important;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:hover {
+    border-color: #42f5c2 !important;
+}
+
+.form-control:focus {
+    border-color: #42f5a1;
+    outline: none;
+    box-shadow: none;
+}
+
+::placeholder {
+    color: #9ee3ad !important;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #42f5c2, #56a4f2);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+.form-container a {
+    text-decoration: none;
+}
+
+.btn-primary { 
+    background-color: #0e8e93 !important;
+    border: none;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+    box-shadow: 0 15px 32px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #799f89 !important;
+}
+
+/* Animación para los íconos */
+.form-control:focus + .icon:hover {
+    animation: iconMove 0.5s forwards;
+}
+
+p{
+ text-align: center;
+}
+
+@keyframes iconMove {
+    0% {
+        transform: translateY(-50%) scale(1);
+    }
+    50% {
+        transform: translateY(-50%) scale(1.2); /* Agrandamos ligeramente el icono */
+    }
+    100% {
+        transform: translateY(-50%) scale(1); /* Volvemos al tamaño original */
+    }
+}
+
+/* Otra animación adicional para rotar el icono */
+.form-control:focus + .icon {
+    animation: iconRotate 0.5s forwards;
+}
+
+@keyframes iconRotate {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg); /* Giramos el icono completamente */
+    }
+}
